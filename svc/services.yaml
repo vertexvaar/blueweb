@@ -1,0 +1,23 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  VerteXVaaR\BlueWeb\:
+    resource: '../src/*'
+
+  VerteXVaaR\BlueWeb\Application:
+    public: true
+
+  VerteXVaaR\BlueWeb\ResponseEmitter:
+    public: true
+
+  VerteXVaaR\BlueWeb\Template\TwigFactory:
+    public: true
+    arguments:
+      $extensions: !tagged_iterator twig.extension
+
+  Twig\Environment:
+    factory: [ '@VerteXVaaR\BlueWeb\Template\TwigFactory', 'create' ]
+
+  Psr\Http\Server\RequestHandlerInterface: '@VerteXVaaR\BlueWeb\RequestHandler\ControllerDispatcher'

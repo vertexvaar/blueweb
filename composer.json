@@ -1,0 +1,41 @@
+{
+  "name": "vertexvaar/blueweb",
+  "description": "Web component for the bluesprints framework",
+  "type": "project",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Oliver Eglseder",
+      "email": "bluesprints@vxvr.de",
+      "homepage": "http://vxvr.de/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "VerteXVaaR\\BlueWeb\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "guzzlehttp/psr7": "^2.6",
+    "psr/http-server-middleware": "^1.0",
+    "psr/simple-cache": "^3.0.0",
+    "ramsey/uuid": "^4.7.4",
+    "symfony/dotenv": "^v7.0",
+    "twig/twig": "^v3.7.1",
+    "vertexvaar/bluesprints": "*",
+    "nikic/fast-route": "^v1.3.0"
+  },
+  "suggest": {
+    "erusev/parsedown": "Is used to print exception help pages in HTML instead of pure markdown (development context only)."
+  },
+  "extra": {
+    "vertexvaar/bluesprints": {
+      "services": "svc",
+      "view": "view",
+      "middlewares": "config",
+      "translations": "translations"
+    }
+  }
+}

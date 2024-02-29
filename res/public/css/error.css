@@ -1,0 +1,87 @@
+.c-error {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+.c-error h1 {
+    background: #d34434;
+    border-left: 4px solid #d34434;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    padding: 1em 0 1em 1.5em;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.c-error h2 {
+    background: #efefef;
+    border-left: 4px solid darkgreen;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    padding: 1em 0 1em 1.5em;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.c-error h3 {
+    background: #efefef;
+    border-left: 4px solid #ccc;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1em 0 1em 1.5em;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.c-error p {
+    margin: 0.5rem 0;
+}
+
+.c-error code {
+    margin: 0 2px;
+    padding: 0 5px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.c-error__call-stack {
+    margin: 1rem 0 2rem;
+    padding-left: 1.5rem;
+}
+
+.c-error__call-stack li {
+    margin-bottom: 0.5em;
+}
+
+.c-error__report {
+    background-color: #f65c48;
+    border-left: 4px solid #d34434;
+    padding: 1em;
+    color: #333;
+}
+
+.c-error__report code {
+    color: #444;
+}
+
+.c-error__md {
+    background-color: #fafafa;
+    border: 1px solid #efefef;
+    border-left: 4px solid darkgreen;
+    border-top: 0;
+    padding: 1em;
+}
